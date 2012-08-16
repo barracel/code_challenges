@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class Question1 {
+public class CommonAncestor {
 
     static public Stack<TreeNode> pathToRoot(TreeNode node) {
         TreeNode runner = node;
