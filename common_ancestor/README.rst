@@ -2,11 +2,12 @@
 Common ancestor
 ===============
 
-You have the following Java class:
-public class TreeNode {
-      TreeNode parent;
-      TreeNode findFirstCommonAncestor(TreeNode other);
-}
+You have the following Java class::
+
+   public class TreeNode {
+         TreeNode parent;
+         TreeNode findFirstCommonAncestor(TreeNode other);
+   }
 
 Implement the 'findFirstCommonAncestor' method that given another TreeNode
 finds the first (deepest in the tree) common ancestor of 'this' TreeNode and
