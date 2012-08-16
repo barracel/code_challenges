@@ -1,3 +1,5 @@
+import sys
+
 def element(num, x):
     if num == 0:
         return 1 if x == 0 else 0
@@ -36,3 +38,18 @@ def pascal_iterative(num):
             prev = tmp
             print row[x],
         print '\n',
+
+if __name__ == '__main__':
+    try:
+        num = sys.argv[1]
+    except IndexError:
+        num = int(raw_input('Enter number:'))
+
+    print "Recursive:"
+    pascal_recursive(num, element_func=element)
+
+    print "\nRecursive memoized:"
+    pascal_recursive(num, element_func=element_memoized)
+
+    print "\nIterative:"
+    pascal_iterative(num)
